@@ -1,0 +1,124 @@
+{
+	"categories": [
+		{
+			"uuid": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"title": "Task",
+			"color": "569eff"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "856698f3-ebf9-41b2-a55f-5834fde0ceb3",
+			"title": "Todo",
+			"tasks": [
+				"b0907af2-dcad-4ac5-86a6-1fff3ab80d0a",
+				"9d800104-a388-4541-8d78-1384f83391ea",
+				"d3ed5f68-6d95-4e1e-a53b-ec994f3d7602",
+				"8bba5233-7c5c-46f4-95f7-88e3c56e6428",
+				"ed28cc85-c32a-4c99-9485-ddde8e608869",
+				"28c5c2fa-895c-4c79-834c-772a4defa163",
+				"ed8f8ed6-7276-41da-8f4a-8542b7f74722",
+				"3c9d283b-5686-4a06-8ad0-c8aac2bf8795"
+			]
+		},
+		{
+			"uuid": "bbfa3988-a1e9-48bd-b00e-a21081cf334e",
+			"title": "Doing",
+			"tasks": [
+				"9b047ae8-8a40-4fc3-91f4-32e1dbdcd6da"
+			]
+		},
+		{
+			"uuid": "2b8ec32f-d081-4be3-987e-4fb610c810d5",
+			"title": "Done",
+			"tasks": [
+				"07261c97-ba07-48fc-9505-e87f8d7e4dab"
+			]
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "b0907af2-dcad-4ac5-86a6-1fff3ab80d0a",
+			"title": "implement player movement",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "9b047ae8-8a40-4fc3-91f4-32e1dbdcd6da",
+			"title": "gravity",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "07261c97-ba07-48fc-9505-e87f8d7e4dab",
+			"title": "test plane",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "9d800104-a388-4541-8d78-1384f83391ea",
+			"title": "level 1",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "d3ed5f68-6d95-4e1e-a53b-ec994f3d7602",
+			"title": "level 2",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "8bba5233-7c5c-46f4-95f7-88e3c56e6428",
+			"title": "level 3",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "ed28cc85-c32a-4c99-9485-ddde8e608869",
+			"title": "level 4",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "28c5c2fa-895c-4c79-834c-772a4defa163",
+			"title": "level 5",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "ed8f8ed6-7276-41da-8f4a-8542b7f74722",
+			"title": "beginning cutscene",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		},
+		{
+			"uuid": "3c9d283b-5686-4a06-8ad0-c8aac2bf8795",
+			"title": "gdd",
+			"description": "",
+			"category": "e1a2e76b-54b4-4ab9-a6b8-7125ea3caa4a",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"856698f3-ebf9-41b2-a55f-5834fde0ceb3"
+			],
+			[
+				"bbfa3988-a1e9-48bd-b00e-a21081cf334e"
+			],
+			[
+				"2b8ec32f-d081-4be3-987e-4fb610c810d5"
+			]
+		]
+	}
+}

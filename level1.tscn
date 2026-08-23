@@ -1,0 +1,1306 @@
+[gd_scene format=3 uid="uid://bnjyqwiegkvcx"]
+
+[ext_resource type="Script" uid="uid://drb87x01gfx6x" path="res://player_movement.gd" id="1_dopym"]
+[ext_resource type="Texture2D" uid="uid://cwmx765pnh5ef" path="res://Screenshot 2026-08-23 182616.png" id="2_ootpb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4uktx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p86t8"]
+size = Vector2(192, 20)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p86t8"]
+radius = 27.0
+height = 82.0
+
+[node name="Node2D" type="Node2D" unique_id=44959146]
+
+[node name="Platforms" type="Node2D" parent="." unique_id=492052417]
+
+[node name="Platform" type="Node2D" parent="Platforms" unique_id=2107283701]
+position = Vector2(436, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform" unique_id=128285913]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform/StaticBody2D" unique_id=118314825]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform/StaticBody2D" unique_id=2085739650]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Platforms/Platform" unique_id=778271890]
+position = Vector2(1333, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform/StaticBody2D2" unique_id=967201161]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform/StaticBody2D2" unique_id=645572010]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Platforms/Platform" unique_id=2037486737]
+position = Vector2(2668, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform/StaticBody2D3" unique_id=1653420225]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform/StaticBody2D3" unique_id=1629065654]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform9" type="Node2D" parent="Platforms" unique_id=543270901]
+position = Vector2(243, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform9" unique_id=1075786205]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform9/StaticBody2D" unique_id=468053226]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform9/StaticBody2D" unique_id=34306255]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform10" type="Node2D" parent="Platforms" unique_id=1653096006]
+position = Vector2(50, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform10" unique_id=1463588202]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform10/StaticBody2D" unique_id=216264147]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform10/StaticBody2D" unique_id=444028751]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform11" type="Node2D" parent="Platforms" unique_id=1462737154]
+position = Vector2(-142, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform11" unique_id=563248452]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform11/StaticBody2D" unique_id=1603242326]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform11/StaticBody2D" unique_id=60821261]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform12" type="Node2D" parent="Platforms" unique_id=992322548]
+position = Vector2(628, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform12" unique_id=578988801]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform12/StaticBody2D" unique_id=379890733]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform12/StaticBody2D" unique_id=2127352653]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform13" type="Node2D" parent="Platforms" unique_id=399512026]
+position = Vector2(818, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform13" unique_id=1790297928]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform13/StaticBody2D" unique_id=1562926187]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform13/StaticBody2D" unique_id=1990137635]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform14" type="Node2D" parent="Platforms" unique_id=650897699]
+position = Vector2(1007, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform14" unique_id=56976185]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform14/StaticBody2D" unique_id=1046608469]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform14/StaticBody2D" unique_id=890540788]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform15" type="Node2D" parent="Platforms" unique_id=368841910]
+position = Vector2(1576, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform15" unique_id=2026449367]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform15/StaticBody2D" unique_id=54629917]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform15/StaticBody2D" unique_id=104152747]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform16" type="Node2D" parent="Platforms" unique_id=1383523432]
+position = Vector2(1383, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform16" unique_id=1131062711]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform16/StaticBody2D" unique_id=1263307439]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform16/StaticBody2D" unique_id=801914578]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform17" type="Node2D" parent="Platforms" unique_id=1362323915]
+position = Vector2(1191, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform17" unique_id=293972010]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform17/StaticBody2D" unique_id=1828847074]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform17/StaticBody2D" unique_id=277885677]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform18" type="Node2D" parent="Platforms" unique_id=988663982]
+position = Vector2(1961, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform18" unique_id=1820614225]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform18/StaticBody2D" unique_id=1634306852]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform18/StaticBody2D" unique_id=1180309515]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform19" type="Node2D" parent="Platforms" unique_id=973790518]
+position = Vector2(2151, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform19" unique_id=599408781]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform19/StaticBody2D" unique_id=520635732]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform19/StaticBody2D" unique_id=816191830]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform20" type="Node2D" parent="Platforms" unique_id=1633857389]
+position = Vector2(2340, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform20" unique_id=1419728695]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform20/StaticBody2D" unique_id=1081232829]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform20/StaticBody2D" unique_id=192863970]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform21" type="Node2D" parent="Platforms" unique_id=647444314]
+position = Vector2(2911, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform21" unique_id=865701708]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform21/StaticBody2D" unique_id=1592505405]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform21/StaticBody2D" unique_id=144150833]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform22" type="Node2D" parent="Platforms" unique_id=1477903814]
+position = Vector2(2718, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform22" unique_id=1730935121]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform22/StaticBody2D" unique_id=1268825515]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform22/StaticBody2D" unique_id=2052279174]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform23" type="Node2D" parent="Platforms" unique_id=230542878]
+position = Vector2(2526, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform23" unique_id=36864120]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform23/StaticBody2D" unique_id=12738298]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform23/StaticBody2D" unique_id=2449464]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform24" type="Node2D" parent="Platforms" unique_id=1294691336]
+position = Vector2(3296, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform24" unique_id=2124600912]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform24/StaticBody2D" unique_id=671675100]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform24/StaticBody2D" unique_id=866524698]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform25" type="Node2D" parent="Platforms" unique_id=841311201]
+position = Vector2(3486, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform25" unique_id=177760189]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform25/StaticBody2D" unique_id=495617987]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform25/StaticBody2D" unique_id=1265241752]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform26" type="Node2D" parent="Platforms" unique_id=402203393]
+position = Vector2(3675, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform26" unique_id=307534226]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform26/StaticBody2D" unique_id=729838005]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform26/StaticBody2D" unique_id=1193167188]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform27" type="Node2D" parent="Platforms" unique_id=311995703]
+position = Vector2(-3570, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform27" unique_id=751131207]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform27/StaticBody2D" unique_id=1430412929]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform27/StaticBody2D" unique_id=1192247133]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Platforms/Platform27" unique_id=387300744]
+position = Vector2(1333, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform27/StaticBody2D2" unique_id=1086078808]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform27/StaticBody2D2" unique_id=1731541269]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Platforms/Platform27" unique_id=114135860]
+position = Vector2(2668, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform27/StaticBody2D3" unique_id=1235785402]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform27/StaticBody2D3" unique_id=374075342]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform28" type="Node2D" parent="Platforms" unique_id=377889845]
+position = Vector2(-3763, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform28" unique_id=2128635382]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform28/StaticBody2D" unique_id=1438631825]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform28/StaticBody2D" unique_id=1931036661]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform29" type="Node2D" parent="Platforms" unique_id=1035855517]
+position = Vector2(-3956, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform29" unique_id=1017992499]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform29/StaticBody2D" unique_id=1467026223]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform29/StaticBody2D" unique_id=2063867703]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform30" type="Node2D" parent="Platforms" unique_id=1366613983]
+position = Vector2(-4148, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform30" unique_id=2109348972]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform30/StaticBody2D" unique_id=1245152898]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform30/StaticBody2D" unique_id=1829428963]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform31" type="Node2D" parent="Platforms" unique_id=1152911828]
+position = Vector2(-3378, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform31" unique_id=1548593181]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform31/StaticBody2D" unique_id=896011524]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform31/StaticBody2D" unique_id=806925296]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform32" type="Node2D" parent="Platforms" unique_id=156351667]
+position = Vector2(-3188, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform32" unique_id=1132131763]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform32/StaticBody2D" unique_id=493550553]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform32/StaticBody2D" unique_id=1907566414]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform33" type="Node2D" parent="Platforms" unique_id=1693832147]
+position = Vector2(-2999, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform33" unique_id=970792531]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform33/StaticBody2D" unique_id=538842173]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform33/StaticBody2D" unique_id=1912591980]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform34" type="Node2D" parent="Platforms" unique_id=1930527982]
+position = Vector2(-2430, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform34" unique_id=853030119]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform34/StaticBody2D" unique_id=598795547]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform34/StaticBody2D" unique_id=1959931650]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform35" type="Node2D" parent="Platforms" unique_id=229687340]
+position = Vector2(-2623, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform35" unique_id=1965834375]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform35/StaticBody2D" unique_id=1288730580]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform35/StaticBody2D" unique_id=2050259760]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform36" type="Node2D" parent="Platforms" unique_id=1775577286]
+position = Vector2(-2815, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform36" unique_id=1198918795]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform36/StaticBody2D" unique_id=1100718025]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform36/StaticBody2D" unique_id=1076336840]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform37" type="Node2D" parent="Platforms" unique_id=13392526]
+position = Vector2(-2045, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform37" unique_id=57302430]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform37/StaticBody2D" unique_id=333102557]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform37/StaticBody2D" unique_id=1445502955]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform38" type="Node2D" parent="Platforms" unique_id=440223601]
+position = Vector2(-1855, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform38" unique_id=1367109756]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform38/StaticBody2D" unique_id=1742304835]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform38/StaticBody2D" unique_id=245863105]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform39" type="Node2D" parent="Platforms" unique_id=495229322]
+position = Vector2(-1666, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform39" unique_id=1375005752]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform39/StaticBody2D" unique_id=839995808]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform39/StaticBody2D" unique_id=750530184]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform40" type="Node2D" parent="Platforms" unique_id=1135008305]
+position = Vector2(-1095, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform40" unique_id=1380553727]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform40/StaticBody2D" unique_id=1177235776]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform40/StaticBody2D" unique_id=648385581]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform41" type="Node2D" parent="Platforms" unique_id=587163058]
+position = Vector2(-1288, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform41" unique_id=1998724783]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform41/StaticBody2D" unique_id=754686598]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform41/StaticBody2D" unique_id=1699255546]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform42" type="Node2D" parent="Platforms" unique_id=554088427]
+position = Vector2(-1480, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform42" unique_id=236702028]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform42/StaticBody2D" unique_id=88183574]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform42/StaticBody2D" unique_id=148867933]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform43" type="Node2D" parent="Platforms" unique_id=2145420886]
+position = Vector2(-710, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform43" unique_id=2012765710]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform43/StaticBody2D" unique_id=1918966439]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform43/StaticBody2D" unique_id=1039370661]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform44" type="Node2D" parent="Platforms" unique_id=1769508964]
+position = Vector2(-520, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform44" unique_id=1169250010]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform44/StaticBody2D" unique_id=56152443]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform44/StaticBody2D" unique_id=600626581]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform45" type="Node2D" parent="Platforms" unique_id=1280187154]
+position = Vector2(-331, 441)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform45" unique_id=1435179906]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform45/StaticBody2D" unique_id=1930008867]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform45/StaticBody2D" unique_id=1380777028]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform46" type="Node2D" parent="Platforms" unique_id=901907965]
+position = Vector2(-7578, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform46" unique_id=1632860700]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform46/StaticBody2D" unique_id=140596049]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform46/StaticBody2D" unique_id=1327044573]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Platforms/Platform46" unique_id=1159797727]
+position = Vector2(1333, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform46/StaticBody2D2" unique_id=1204254245]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform46/StaticBody2D2" unique_id=2122396866]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Platforms/Platform46" unique_id=479824851]
+position = Vector2(2668, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform46/StaticBody2D3" unique_id=1878563966]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform46/StaticBody2D3" unique_id=500805654]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform47" type="Node2D" parent="Platforms" unique_id=396523195]
+position = Vector2(-7771, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform47" unique_id=1139976667]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform47/StaticBody2D" unique_id=610974082]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform47/StaticBody2D" unique_id=2022900917]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform48" type="Node2D" parent="Platforms" unique_id=1924881711]
+position = Vector2(-7964, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform48" unique_id=1811888945]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform48/StaticBody2D" unique_id=1628639509]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform48/StaticBody2D" unique_id=985792672]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform49" type="Node2D" parent="Platforms" unique_id=468330867]
+position = Vector2(-8156, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform49" unique_id=1615049027]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform49/StaticBody2D" unique_id=1571089951]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform49/StaticBody2D" unique_id=1857155616]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform50" type="Node2D" parent="Platforms" unique_id=2019650882]
+position = Vector2(-7386, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform50" unique_id=2011798863]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform50/StaticBody2D" unique_id=210898175]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform50/StaticBody2D" unique_id=691484716]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform51" type="Node2D" parent="Platforms" unique_id=1474959895]
+position = Vector2(-7196, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform51" unique_id=1014663654]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform51/StaticBody2D" unique_id=588471374]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform51/StaticBody2D" unique_id=515457861]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform52" type="Node2D" parent="Platforms" unique_id=349617737]
+position = Vector2(-7007, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform52" unique_id=547100015]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform52/StaticBody2D" unique_id=458206662]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform52/StaticBody2D" unique_id=1048189009]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform53" type="Node2D" parent="Platforms" unique_id=901439237]
+position = Vector2(-6438, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform53" unique_id=151402287]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform53/StaticBody2D" unique_id=508556027]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform53/StaticBody2D" unique_id=484480663]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform54" type="Node2D" parent="Platforms" unique_id=2061096882]
+position = Vector2(-6631, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform54" unique_id=1770258116]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform54/StaticBody2D" unique_id=2091486616]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform54/StaticBody2D" unique_id=1403359864]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform55" type="Node2D" parent="Platforms" unique_id=933595993]
+position = Vector2(-6823, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform55" unique_id=1623937812]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform55/StaticBody2D" unique_id=295305434]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform55/StaticBody2D" unique_id=773389144]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform56" type="Node2D" parent="Platforms" unique_id=1333997033]
+position = Vector2(-6053, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform56" unique_id=909792266]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform56/StaticBody2D" unique_id=88783087]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform56/StaticBody2D" unique_id=974246122]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform57" type="Node2D" parent="Platforms" unique_id=1700338185]
+position = Vector2(-5863, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform57" unique_id=463213766]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform57/StaticBody2D" unique_id=596842553]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform57/StaticBody2D" unique_id=2092563410]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform58" type="Node2D" parent="Platforms" unique_id=1461077285]
+position = Vector2(-5674, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform58" unique_id=362906572]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform58/StaticBody2D" unique_id=1416593402]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform58/StaticBody2D" unique_id=1882768410]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform59" type="Node2D" parent="Platforms" unique_id=1445149795]
+position = Vector2(-5103, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform59" unique_id=587687326]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform59/StaticBody2D" unique_id=1875111062]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform59/StaticBody2D" unique_id=1805273728]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform60" type="Node2D" parent="Platforms" unique_id=296851089]
+position = Vector2(-5296, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform60" unique_id=585541864]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform60/StaticBody2D" unique_id=1886795011]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform60/StaticBody2D" unique_id=245063590]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform61" type="Node2D" parent="Platforms" unique_id=521290017]
+position = Vector2(-5488, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform61" unique_id=1906023641]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform61/StaticBody2D" unique_id=726915538]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform61/StaticBody2D" unique_id=1785956211]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform62" type="Node2D" parent="Platforms" unique_id=205982184]
+position = Vector2(-4718, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform62" unique_id=1759559454]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform62/StaticBody2D" unique_id=1672608965]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform62/StaticBody2D" unique_id=855335880]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform63" type="Node2D" parent="Platforms" unique_id=693065564]
+position = Vector2(-4528, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform63" unique_id=1828897501]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform63/StaticBody2D" unique_id=810683663]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform63/StaticBody2D" unique_id=642323395]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform64" type="Node2D" parent="Platforms" unique_id=581230112]
+position = Vector2(-4339, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform64" unique_id=800757960]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform64/StaticBody2D" unique_id=1857639679]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform64/StaticBody2D" unique_id=15201492]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform65" type="Node2D" parent="Platforms" unique_id=2118746194]
+position = Vector2(4445, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform65" unique_id=2099021403]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform65/StaticBody2D" unique_id=1247342284]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform65/StaticBody2D" unique_id=1709924256]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Platforms/Platform65" unique_id=1125491786]
+position = Vector2(1333, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform65/StaticBody2D2" unique_id=36637384]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform65/StaticBody2D2" unique_id=822997600]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Platforms/Platform65" unique_id=210447260]
+position = Vector2(2668, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform65/StaticBody2D3" unique_id=2117916682]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform65/StaticBody2D3" unique_id=1126458326]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform66" type="Node2D" parent="Platforms" unique_id=1221872453]
+position = Vector2(4252, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform66" unique_id=1513596834]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform66/StaticBody2D" unique_id=1924792653]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform66/StaticBody2D" unique_id=493837760]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform67" type="Node2D" parent="Platforms" unique_id=1408427133]
+position = Vector2(4059, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform67" unique_id=3603918]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform67/StaticBody2D" unique_id=1157110345]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform67/StaticBody2D" unique_id=600720147]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform68" type="Node2D" parent="Platforms" unique_id=2012976795]
+position = Vector2(3867, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform68" unique_id=651811301]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform68/StaticBody2D" unique_id=720347024]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform68/StaticBody2D" unique_id=959759203]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform69" type="Node2D" parent="Platforms" unique_id=1551466843]
+position = Vector2(4637, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform69" unique_id=1397122732]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform69/StaticBody2D" unique_id=1865728827]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform69/StaticBody2D" unique_id=528568613]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform70" type="Node2D" parent="Platforms" unique_id=58647587]
+position = Vector2(4827, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform70" unique_id=1569325641]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform70/StaticBody2D" unique_id=1731653846]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform70/StaticBody2D" unique_id=894435840]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform71" type="Node2D" parent="Platforms" unique_id=581089722]
+position = Vector2(5016, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform71" unique_id=1414523713]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform71/StaticBody2D" unique_id=1420454818]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform71/StaticBody2D" unique_id=1072128573]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform72" type="Node2D" parent="Platforms" unique_id=1720171387]
+position = Vector2(5585, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform72" unique_id=743229894]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform72/StaticBody2D" unique_id=1156911717]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform72/StaticBody2D" unique_id=2022003087]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform73" type="Node2D" parent="Platforms" unique_id=1524670415]
+position = Vector2(5392, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform73" unique_id=1205531299]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform73/StaticBody2D" unique_id=9022123]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform73/StaticBody2D" unique_id=95892244]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform74" type="Node2D" parent="Platforms" unique_id=155324797]
+position = Vector2(5200, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform74" unique_id=419957824]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform74/StaticBody2D" unique_id=1640454596]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform74/StaticBody2D" unique_id=625706952]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform75" type="Node2D" parent="Platforms" unique_id=1597718750]
+position = Vector2(5970, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform75" unique_id=1764933344]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform75/StaticBody2D" unique_id=1802023851]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform75/StaticBody2D" unique_id=1041127990]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform76" type="Node2D" parent="Platforms" unique_id=1725690393]
+position = Vector2(6160, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform76" unique_id=1791263339]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform76/StaticBody2D" unique_id=1301023187]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform76/StaticBody2D" unique_id=1565785241]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform77" type="Node2D" parent="Platforms" unique_id=2050048804]
+position = Vector2(6349, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform77" unique_id=2105301793]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform77/StaticBody2D" unique_id=657436147]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform77/StaticBody2D" unique_id=196631056]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform78" type="Node2D" parent="Platforms" unique_id=1361974210]
+position = Vector2(6920, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform78" unique_id=153805960]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform78/StaticBody2D" unique_id=545726230]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform78/StaticBody2D" unique_id=1099012296]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform79" type="Node2D" parent="Platforms" unique_id=94283195]
+position = Vector2(6727, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform79" unique_id=1029528954]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform79/StaticBody2D" unique_id=52427699]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform79/StaticBody2D" unique_id=636173022]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform80" type="Node2D" parent="Platforms" unique_id=786552484]
+position = Vector2(6535, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform80" unique_id=1663112037]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform80/StaticBody2D" unique_id=1022691244]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform80/StaticBody2D" unique_id=1515919544]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform81" type="Node2D" parent="Platforms" unique_id=1469389355]
+position = Vector2(7305, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform81" unique_id=340936193]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform81/StaticBody2D" unique_id=193168917]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform81/StaticBody2D" unique_id=1578252926]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform82" type="Node2D" parent="Platforms" unique_id=123192663]
+position = Vector2(7495, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform82" unique_id=836788699]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform82/StaticBody2D" unique_id=1646427048]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform82/StaticBody2D" unique_id=763244171]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform83" type="Node2D" parent="Platforms" unique_id=345336290]
+position = Vector2(7684, 440)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform83" unique_id=808902036]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform83/StaticBody2D" unique_id=2067673249]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform83/StaticBody2D" unique_id=734388032]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform2" type="Node2D" parent="Platforms" unique_id=1982582261]
+position = Vector2(198, 280)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform2" unique_id=759388898]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform2/StaticBody2D" unique_id=2070605125]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform2/StaticBody2D" unique_id=206022547]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform84" type="Node2D" parent="Platforms" unique_id=826502974]
+position = Vector2(423, 281)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform84" unique_id=1609325301]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform84/StaticBody2D" unique_id=725181769]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform84/StaticBody2D" unique_id=1155684038]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform3" type="Node2D" parent="Platforms" unique_id=1113562464]
+position = Vector2(669, 279)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform3" unique_id=975444648]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform3/StaticBody2D" unique_id=1472160917]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform3/StaticBody2D" unique_id=1103021867]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform4" type="Node2D" parent="Platforms" unique_id=938335532]
+position = Vector2(900, 339)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform4" unique_id=1676325001]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform4/StaticBody2D" unique_id=1757061336]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform4/StaticBody2D" unique_id=719980553]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform5" type="Node2D" parent="Platforms" unique_id=1526451286]
+position = Vector2(900, 586)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform5" unique_id=203562598]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform5/StaticBody2D" unique_id=1649019934]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform5/StaticBody2D" unique_id=2012742411]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform6" type="Node2D" parent="Platforms" unique_id=2045365876]
+position = Vector2(606, 587)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform6" unique_id=1915847900]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform6/StaticBody2D" unique_id=685916296]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform6/StaticBody2D" unique_id=1673700715]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform7" type="Node2D" parent="Platforms" unique_id=128147975]
+position = Vector2(315, 587)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform7" unique_id=643303906]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform7/StaticBody2D" unique_id=334396963]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform7/StaticBody2D" unique_id=347578822]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="Platform8" type="Node2D" parent="Platforms" unique_id=873493666]
+position = Vector2(32, 585)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms/Platform8" unique_id=1946481431]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platforms/Platform8/StaticBody2D" unique_id=975991789]
+position = Vector2(85.99999, 0)
+scale = Vector2(191.99998, 20)
+mesh = SubResource("BoxMesh_4uktx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform8/StaticBody2D" unique_id=680470622]
+position = Vector2(86, 0)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="PlayerCharacter" type="CharacterBody2D" parent="." unique_id=1997386557]
+position = Vector2(525, 198)
+script = ExtResource("1_dopym")
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerCharacter" unique_id=1733916094]
+position = Vector2(0, -5)
+scale = Vector2(0.280543, 0.20674157)
+texture = ExtResource("2_ootpb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter" unique_id=230245472]
+shape = SubResource("CapsuleShape2D_p86t8")
+
+[node name="Camera2D" type="Camera2D" parent="PlayerCharacter" unique_id=953426489]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=757359653]
+follow_viewport_enabled = true
