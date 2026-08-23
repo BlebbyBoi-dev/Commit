@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bnjyqwiegkvcx"]
 
 [ext_resource type="Script" uid="uid://drb87x01gfx6x" path="res://player_movement.gd" id="1_dopym"]
+[ext_resource type="Texture2D" uid="uid://rs7fkdflimdx" path="res://icon.svg" id="1_ootpb"]
 [ext_resource type="Texture2D" uid="uid://cwmx765pnh5ef" path="res://Screenshot 2026-08-23 182616.png" id="2_ootpb"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4uktx"]
@@ -25,6 +26,7 @@ position = Vector2(436, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform/StaticBody2D" unique_id=2085739650]
 position = Vector2(86, 0)
@@ -37,6 +39,7 @@ position = Vector2(1333, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform/StaticBody2D2" unique_id=645572010]
 position = Vector2(86, 0)
@@ -49,6 +52,7 @@ position = Vector2(2668, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform/StaticBody2D3" unique_id=1629065654]
 position = Vector2(86, 0)
@@ -63,6 +67,7 @@ position = Vector2(243, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform9/StaticBody2D" unique_id=34306255]
 position = Vector2(86, 0)
@@ -77,6 +82,7 @@ position = Vector2(50, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform10/StaticBody2D" unique_id=444028751]
 position = Vector2(86, 0)
@@ -91,6 +97,7 @@ position = Vector2(-142, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform11/StaticBody2D" unique_id=60821261]
 position = Vector2(86, 0)
@@ -105,6 +112,7 @@ position = Vector2(628, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform12/StaticBody2D" unique_id=2127352653]
 position = Vector2(86, 0)
@@ -119,6 +127,7 @@ position = Vector2(818, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform13/StaticBody2D" unique_id=1990137635]
 position = Vector2(86, 0)
@@ -133,6 +142,7 @@ position = Vector2(1007, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform14/StaticBody2D" unique_id=890540788]
 position = Vector2(86, 0)
@@ -147,6 +157,7 @@ position = Vector2(1576, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform15/StaticBody2D" unique_id=104152747]
 position = Vector2(86, 0)
@@ -161,6 +172,7 @@ position = Vector2(1383, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform16/StaticBody2D" unique_id=801914578]
 position = Vector2(86, 0)
@@ -175,6 +187,7 @@ position = Vector2(1191, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform17/StaticBody2D" unique_id=277885677]
 position = Vector2(86, 0)
@@ -189,6 +202,7 @@ position = Vector2(1961, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform18/StaticBody2D" unique_id=1180309515]
 position = Vector2(86, 0)
@@ -203,6 +217,7 @@ position = Vector2(2151, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform19/StaticBody2D" unique_id=816191830]
 position = Vector2(86, 0)
@@ -217,6 +232,7 @@ position = Vector2(2340, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform20/StaticBody2D" unique_id=192863970]
 position = Vector2(86, 0)
@@ -231,6 +247,7 @@ position = Vector2(2911, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform21/StaticBody2D" unique_id=144150833]
 position = Vector2(86, 0)
@@ -245,6 +262,7 @@ position = Vector2(2718, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform22/StaticBody2D" unique_id=2052279174]
 position = Vector2(86, 0)
@@ -259,6 +277,7 @@ position = Vector2(2526, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform23/StaticBody2D" unique_id=2449464]
 position = Vector2(86, 0)
@@ -273,6 +292,7 @@ position = Vector2(3296, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform24/StaticBody2D" unique_id=866524698]
 position = Vector2(86, 0)
@@ -287,6 +307,7 @@ position = Vector2(3486, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform25/StaticBody2D" unique_id=1265241752]
 position = Vector2(86, 0)
@@ -301,6 +322,7 @@ position = Vector2(3675, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform26/StaticBody2D" unique_id=1193167188]
 position = Vector2(86, 0)
@@ -315,6 +337,7 @@ position = Vector2(-3570, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform27/StaticBody2D" unique_id=1192247133]
 position = Vector2(86, 0)
@@ -327,6 +350,7 @@ position = Vector2(1333, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform27/StaticBody2D2" unique_id=1731541269]
 position = Vector2(86, 0)
@@ -339,6 +363,7 @@ position = Vector2(2668, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform27/StaticBody2D3" unique_id=374075342]
 position = Vector2(86, 0)
@@ -353,6 +378,7 @@ position = Vector2(-3763, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform28/StaticBody2D" unique_id=1931036661]
 position = Vector2(86, 0)
@@ -367,6 +393,7 @@ position = Vector2(-3956, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform29/StaticBody2D" unique_id=2063867703]
 position = Vector2(86, 0)
@@ -381,6 +408,7 @@ position = Vector2(-4148, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform30/StaticBody2D" unique_id=1829428963]
 position = Vector2(86, 0)
@@ -395,6 +423,7 @@ position = Vector2(-3378, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform31/StaticBody2D" unique_id=806925296]
 position = Vector2(86, 0)
@@ -409,6 +438,7 @@ position = Vector2(-3188, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform32/StaticBody2D" unique_id=1907566414]
 position = Vector2(86, 0)
@@ -423,6 +453,7 @@ position = Vector2(-2999, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform33/StaticBody2D" unique_id=1912591980]
 position = Vector2(86, 0)
@@ -437,6 +468,7 @@ position = Vector2(-2430, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform34/StaticBody2D" unique_id=1959931650]
 position = Vector2(86, 0)
@@ -451,6 +483,7 @@ position = Vector2(-2623, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform35/StaticBody2D" unique_id=2050259760]
 position = Vector2(86, 0)
@@ -465,6 +498,7 @@ position = Vector2(-2815, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform36/StaticBody2D" unique_id=1076336840]
 position = Vector2(86, 0)
@@ -479,6 +513,7 @@ position = Vector2(-2045, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform37/StaticBody2D" unique_id=1445502955]
 position = Vector2(86, 0)
@@ -493,6 +528,7 @@ position = Vector2(-1855, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform38/StaticBody2D" unique_id=245863105]
 position = Vector2(86, 0)
@@ -507,6 +543,7 @@ position = Vector2(-1666, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform39/StaticBody2D" unique_id=750530184]
 position = Vector2(86, 0)
@@ -521,6 +558,7 @@ position = Vector2(-1095, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform40/StaticBody2D" unique_id=648385581]
 position = Vector2(86, 0)
@@ -535,6 +573,7 @@ position = Vector2(-1288, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform41/StaticBody2D" unique_id=1699255546]
 position = Vector2(86, 0)
@@ -549,6 +588,7 @@ position = Vector2(-1480, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform42/StaticBody2D" unique_id=148867933]
 position = Vector2(86, 0)
@@ -563,6 +603,7 @@ position = Vector2(-710, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform43/StaticBody2D" unique_id=1039370661]
 position = Vector2(86, 0)
@@ -577,6 +618,7 @@ position = Vector2(-520, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform44/StaticBody2D" unique_id=600626581]
 position = Vector2(86, 0)
@@ -591,6 +633,7 @@ position = Vector2(-331, 441)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform45/StaticBody2D" unique_id=1380777028]
 position = Vector2(86, 0)
@@ -605,6 +648,7 @@ position = Vector2(-7578, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform46/StaticBody2D" unique_id=1327044573]
 position = Vector2(86, 0)
@@ -617,6 +661,7 @@ position = Vector2(1333, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform46/StaticBody2D2" unique_id=2122396866]
 position = Vector2(86, 0)
@@ -629,6 +674,7 @@ position = Vector2(2668, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform46/StaticBody2D3" unique_id=500805654]
 position = Vector2(86, 0)
@@ -643,6 +689,7 @@ position = Vector2(-7771, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform47/StaticBody2D" unique_id=2022900917]
 position = Vector2(86, 0)
@@ -657,6 +704,7 @@ position = Vector2(-7964, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform48/StaticBody2D" unique_id=985792672]
 position = Vector2(86, 0)
@@ -671,6 +719,7 @@ position = Vector2(-8156, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform49/StaticBody2D" unique_id=1857155616]
 position = Vector2(86, 0)
@@ -685,6 +734,7 @@ position = Vector2(-7386, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform50/StaticBody2D" unique_id=691484716]
 position = Vector2(86, 0)
@@ -699,6 +749,7 @@ position = Vector2(-7196, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform51/StaticBody2D" unique_id=515457861]
 position = Vector2(86, 0)
@@ -713,6 +764,7 @@ position = Vector2(-7007, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform52/StaticBody2D" unique_id=1048189009]
 position = Vector2(86, 0)
@@ -727,6 +779,7 @@ position = Vector2(-6438, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform53/StaticBody2D" unique_id=484480663]
 position = Vector2(86, 0)
@@ -741,6 +794,7 @@ position = Vector2(-6631, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform54/StaticBody2D" unique_id=1403359864]
 position = Vector2(86, 0)
@@ -755,6 +809,7 @@ position = Vector2(-6823, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform55/StaticBody2D" unique_id=773389144]
 position = Vector2(86, 0)
@@ -769,6 +824,7 @@ position = Vector2(-6053, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform56/StaticBody2D" unique_id=974246122]
 position = Vector2(86, 0)
@@ -783,6 +839,7 @@ position = Vector2(-5863, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform57/StaticBody2D" unique_id=2092563410]
 position = Vector2(86, 0)
@@ -797,6 +854,7 @@ position = Vector2(-5674, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform58/StaticBody2D" unique_id=1882768410]
 position = Vector2(86, 0)
@@ -811,6 +869,7 @@ position = Vector2(-5103, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform59/StaticBody2D" unique_id=1805273728]
 position = Vector2(86, 0)
@@ -825,6 +884,7 @@ position = Vector2(-5296, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform60/StaticBody2D" unique_id=245063590]
 position = Vector2(86, 0)
@@ -839,6 +899,7 @@ position = Vector2(-5488, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform61/StaticBody2D" unique_id=1785956211]
 position = Vector2(86, 0)
@@ -853,6 +914,7 @@ position = Vector2(-4718, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform62/StaticBody2D" unique_id=855335880]
 position = Vector2(86, 0)
@@ -867,6 +929,7 @@ position = Vector2(-4528, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform63/StaticBody2D" unique_id=642323395]
 position = Vector2(86, 0)
@@ -881,6 +944,7 @@ position = Vector2(-4339, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform64/StaticBody2D" unique_id=15201492]
 position = Vector2(86, 0)
@@ -895,6 +959,7 @@ position = Vector2(4445, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform65/StaticBody2D" unique_id=1709924256]
 position = Vector2(86, 0)
@@ -907,6 +972,7 @@ position = Vector2(1333, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform65/StaticBody2D2" unique_id=822997600]
 position = Vector2(86, 0)
@@ -919,6 +985,7 @@ position = Vector2(2668, 0)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform65/StaticBody2D3" unique_id=1126458326]
 position = Vector2(86, 0)
@@ -933,6 +1000,7 @@ position = Vector2(4252, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform66/StaticBody2D" unique_id=493837760]
 position = Vector2(86, 0)
@@ -947,6 +1015,7 @@ position = Vector2(4059, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform67/StaticBody2D" unique_id=600720147]
 position = Vector2(86, 0)
@@ -961,6 +1030,7 @@ position = Vector2(3867, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform68/StaticBody2D" unique_id=959759203]
 position = Vector2(86, 0)
@@ -975,6 +1045,7 @@ position = Vector2(4637, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform69/StaticBody2D" unique_id=528568613]
 position = Vector2(86, 0)
@@ -989,6 +1060,7 @@ position = Vector2(4827, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform70/StaticBody2D" unique_id=894435840]
 position = Vector2(86, 0)
@@ -1003,6 +1075,7 @@ position = Vector2(5016, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform71/StaticBody2D" unique_id=1072128573]
 position = Vector2(86, 0)
@@ -1017,6 +1090,7 @@ position = Vector2(5585, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform72/StaticBody2D" unique_id=2022003087]
 position = Vector2(86, 0)
@@ -1031,6 +1105,7 @@ position = Vector2(5392, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform73/StaticBody2D" unique_id=95892244]
 position = Vector2(86, 0)
@@ -1045,6 +1120,7 @@ position = Vector2(5200, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform74/StaticBody2D" unique_id=625706952]
 position = Vector2(86, 0)
@@ -1059,6 +1135,7 @@ position = Vector2(5970, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform75/StaticBody2D" unique_id=1041127990]
 position = Vector2(86, 0)
@@ -1073,6 +1150,7 @@ position = Vector2(6160, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform76/StaticBody2D" unique_id=1565785241]
 position = Vector2(86, 0)
@@ -1087,6 +1165,7 @@ position = Vector2(6349, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform77/StaticBody2D" unique_id=196631056]
 position = Vector2(86, 0)
@@ -1101,6 +1180,7 @@ position = Vector2(6920, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform78/StaticBody2D" unique_id=1099012296]
 position = Vector2(86, 0)
@@ -1115,6 +1195,7 @@ position = Vector2(6727, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform79/StaticBody2D" unique_id=636173022]
 position = Vector2(86, 0)
@@ -1129,6 +1210,7 @@ position = Vector2(6535, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform80/StaticBody2D" unique_id=1515919544]
 position = Vector2(86, 0)
@@ -1143,6 +1225,7 @@ position = Vector2(7305, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform81/StaticBody2D" unique_id=1578252926]
 position = Vector2(86, 0)
@@ -1157,6 +1240,7 @@ position = Vector2(7495, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform82/StaticBody2D" unique_id=763244171]
 position = Vector2(86, 0)
@@ -1171,6 +1255,7 @@ position = Vector2(7684, 440)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform83/StaticBody2D" unique_id=734388032]
 position = Vector2(86, 0)
@@ -1185,6 +1270,7 @@ position = Vector2(198, 280)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform2/StaticBody2D" unique_id=206022547]
 position = Vector2(86, 0)
@@ -1199,6 +1285,7 @@ position = Vector2(423, 281)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform84/StaticBody2D" unique_id=1155684038]
 position = Vector2(86, 0)
@@ -1213,6 +1300,7 @@ position = Vector2(669, 279)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform3/StaticBody2D" unique_id=1103021867]
 position = Vector2(86, 0)
@@ -1227,6 +1315,7 @@ position = Vector2(900, 339)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform4/StaticBody2D" unique_id=719980553]
 position = Vector2(86, 0)
@@ -1241,6 +1330,7 @@ position = Vector2(900, 586)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform5/StaticBody2D" unique_id=2012742411]
 position = Vector2(86, 0)
@@ -1255,6 +1345,7 @@ position = Vector2(606, 587)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform6/StaticBody2D" unique_id=1673700715]
 position = Vector2(86, 0)
@@ -1269,6 +1360,7 @@ position = Vector2(315, 587)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform7/StaticBody2D" unique_id=347578822]
 position = Vector2(86, 0)
@@ -1283,6 +1375,7 @@ position = Vector2(32, 585)
 position = Vector2(85.99999, 0)
 scale = Vector2(191.99998, 20)
 mesh = SubResource("BoxMesh_4uktx")
+texture = ExtResource("1_ootpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Platform8/StaticBody2D" unique_id=680470622]
 position = Vector2(86, 0)
