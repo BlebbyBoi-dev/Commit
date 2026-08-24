@@ -1,13 +1,14 @@
 extends CharacterBody2D
 
-var gravity = 400
-var accel = 500
-var jump_power = -20000
-var max_speed = 1000
-var dashpower = 700
-var PlayerFacing = 0
-var dashing = false
-var codeworking = false
+@export var gravity = 400
+@export var accel = 500
+@export var jump_power = -20000
+@export var max_speed = 1000
+@export var dashpower = 700
+@export var PlayerFacing = 0
+@export var dashing = false
+@export var codeworking = false
+@onready var sprite = $AnimatedSprite2D
 
 func _physics_process(delta: float) -> void:
 	
@@ -54,6 +55,34 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	print (velocity, PlayerFacing)
 	
+	# Anims
+	if PlayerFacing == 1:
+		$AnimatedSprite2D.flip_h = true
+	elif PlayerFacing == -1:
+		$AnimatedSprite2D.flip_h = false
+	
+	if velocity.x == 0:
+		$AnimatedSprite2D.play("Idle")
+	elif velocity.x > -500 and velocity.x < 500 and !dashing:
+		$AnimatedSprite2D.play("Walking")
+	elif velocity.x > 500 or velocity.x < -500 and !dashing:
+		$AnimatedSprite2D.play("Running")
+	if velocity.y > 0:
+		$AnimatedSprite2D.play("FallLand")
+	elif velocity.y < 0:
+		$AnimatedSprite2D.play("Jump")
+	if dashing and !is_on_floor():
+		$AnimatedSprite2D.play("Backstep")
+	elif dashing and is_on_floor():
+		$AnimatedSprite2D.play("Backstep Land")
+	
+	# get anim
+	var current_anim = sprite.animation
+	if sprite.is_playing():
+		print("Playing: ", current_anim)
+	else:
+		print("Stopped on: ", current_anim)
+		
 func backstep(): #backstep yippee
 	dashing = true
 	velocity.x = dashpower * PlayerFacing
