@@ -8,6 +8,9 @@ extends CharacterBody2D
 @export var PlayerFacing = 0
 @export var dashing = false
 @export var codeworking = false
+@export var friction = 100
+@export var airfriction = 100
+@export var was_airborne = false
 @onready var sprite = $AnimatedSprite2D
 
 func _physics_process(delta: float) -> void:
@@ -23,14 +26,17 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("Left") and is_on_floor() and !dashing:
 		PlayerFacing = 1
 		velocity.x += accel * delta * -1
-	if Input.is_action_just_released("Left") and !dashing:
-		velocity.x = 0
-	
 	if Input.is_action_pressed("Right") and is_on_floor() and !dashing:
 		PlayerFacing = -1
 		velocity.x += accel * delta
-	if Input.is_action_just_released("Right") and !dashing:
-		velocity.x = 0
+	if !Input.is_action_pressed("Left") and !Input.is_action_pressed("Right") and !dashing:
+		velocity.x = move_toward(velocity.x, 0, friction * delta)
+	if Input.is_action_pressed("Left") and !is_on_floor() and !dashing:
+		PlayerFacing = 1
+		velocity.x += airfriction * delta * -1
+	if Input.is_action_pressed("Right") and !is_on_floor() and !dashing:
+		PlayerFacing = -1
+		velocity.x += airfriction * delta
 
 	if velocity.x <= -1 * max_speed:
 		velocity.x = -1 * max_speed
@@ -51,6 +57,18 @@ func _physics_process(delta: float) -> void:
 		velocity.x -= 20
 	if velocity.x == 0:
 		dashing = false
+		$CPUParticles2D3.emitting = false
+
+# particle stuff
+	if is_on_floor():
+		if was_airborne:
+			_on_landed() # Triggers exactly once upon impact
+		was_airborne = false
+	else:
+		was_airborne = true
+# void death
+	if position.y >= 1000:
+		die()
 
 	move_and_slide()
 	print (velocity, PlayerFacing)
@@ -63,17 +81,17 @@ func _physics_process(delta: float) -> void:
 	
 	if velocity.x == 0:
 		$AnimatedSprite2D.play("Idle")
-	elif velocity.x > -500 and velocity.x < 500 and !dashing:
+	elif velocity.x > -500 and velocity.x < 500 and !dashing and !is_on_wall():
 		$AnimatedSprite2D.play("Walking")
-	elif velocity.x > 500 or velocity.x < -500 and !dashing:
+	elif velocity.x > 500 or velocity.x < -500 and !dashing and !is_on_wall():
 		$AnimatedSprite2D.play("Running")
-	if velocity.y > 0:
+	if velocity.y > 0 and !is_on_wall():
 		$AnimatedSprite2D.play("FallLand")
-	elif velocity.y < 0:
+	elif velocity.y < 0 and !is_on_wall():
 		$AnimatedSprite2D.play("Jump")
-	if dashing and !is_on_floor():
+	if dashing and !is_on_floor() and !is_on_wall():
 		$AnimatedSprite2D.play("Backstep")
-	elif dashing and is_on_floor():
+	elif dashing and is_on_floor() and !is_on_wall():
 		$AnimatedSprite2D.play("Backstep Land")
 	
 	# get anim
@@ -85,5 +103,20 @@ func _physics_process(delta: float) -> void:
 		
 func backstep(): #backstep yippee
 	dashing = true
+	if dashing:
+		$CPUParticles2D3.emitting = true
 	velocity.x = dashpower * PlayerFacing
 	move_and_slide()
+
+
+func _on_spike_body_entered(body: Node2D) -> void:
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+	
+func die():
+	get_tree().quit()
+
+func _on_landed() -> void:
+	$CPUParticles2D.emitting = true
+	$CPUParticles2D2.emitting = true
