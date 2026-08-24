@@ -18,7 +18,7 @@ func _physics_process(delta: float) -> void:
 	
 	# GRAVITY
 	velocity.y += gravity * delta
-
+	
 	# MOVEMENT
 	if Input.is_action_pressed("Left") and is_on_floor() and !dashing:
 		PlayerFacing = 1
