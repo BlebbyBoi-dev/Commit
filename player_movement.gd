@@ -79,7 +79,12 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	print (velocity, PlayerFacing)
-	
+	print(codeworking)
+
+
+
+
+
 	# Anims
 	if PlayerFacing == 1:
 		$AnimatedSprite2D.flip_h = true
@@ -108,6 +113,15 @@ func _physics_process(delta: float) -> void:
 	else:
 		print("Stopped on: ", current_anim)
 		
+
+
+
+
+
+
+
+
+
 func backstep(): #backstep yippee
 	dashing = true
 	if dashing:
@@ -116,11 +130,13 @@ func backstep(): #backstep yippee
 	move_and_slide()
 
 
+#if the player touches spike
 func _on_spike_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerCharacter":
 		print("you died lmao", body.name)
 		die()
-	
+
+#the code that kills you (it killed me making it lmao)
 func die():
 	locked = true
 	get_tree().paused = true
@@ -130,16 +146,19 @@ func die():
 	velocity.x = 0
 	velocity.y = 0
 
+
+# *if player hit ground then particle physics*
 func _on_landed() -> void:
 	$CPUParticles2D.emitting = true
 	$CPUParticles2D2.emitting = true
 
-
+# no way howd you do it
 func _on_finish_line_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerCharacter":
 		print("YOU WIN!!!!!!!")
 		win()
-		
+
+# congrats now go reward yourself with some https://www.youtube.com/watch?v=waKumDkYrDY specifically 1:56
 func win():
 	locked = true
 	velocity.x = 0
@@ -148,7 +167,7 @@ func win():
 	$FadeOut/Label.visible = true
 	
 
-
+# aint no way bro you pressed the respawn button i should respawn you
 func _on_button_button_down() -> void:
 	get_tree().paused = false
 	if locked:
