@@ -11,6 +11,7 @@ extends CharacterBody2D
 @export var friction = 100
 @export var airfriction = 100
 @export var was_airborne = false
+@export var locked = false
 @onready var sprite = $AnimatedSprite2D
 
 func _physics_process(delta: float) -> void:
@@ -20,21 +21,22 @@ func _physics_process(delta: float) -> void:
 		codeworking = true
 	
 	# GRAVITY
-	velocity.y += gravity * delta
+	if !locked:
+		velocity.y += gravity * delta
 	
 	# MOVEMENT
-	if Input.is_action_pressed("Left") and is_on_floor() and !dashing:
+	if Input.is_action_pressed("Left") and is_on_floor() and !dashing and !locked:
 		PlayerFacing = 1
 		velocity.x += accel * delta * -1
-	if Input.is_action_pressed("Right") and is_on_floor() and !dashing:
+	if Input.is_action_pressed("Right") and is_on_floor() and !dashing and !locked:
 		PlayerFacing = -1
 		velocity.x += accel * delta
-	if !Input.is_action_pressed("Left") and !Input.is_action_pressed("Right") and !dashing:
+	if !Input.is_action_pressed("Left") and !Input.is_action_pressed("Right") and !dashing and !locked:
 		velocity.x = move_toward(velocity.x, 0, friction * delta)
-	if Input.is_action_pressed("Left") and !is_on_floor() and !dashing:
+	if Input.is_action_pressed("Left") and !is_on_floor() and !dashing and !locked:
 		PlayerFacing = 1
 		velocity.x += airfriction * delta * -1
-	if Input.is_action_pressed("Right") and !is_on_floor() and !dashing:
+	if Input.is_action_pressed("Right") and !is_on_floor() and !dashing and !locked:
 		PlayerFacing = -1
 		velocity.x += airfriction * delta
 
@@ -69,6 +71,11 @@ func _physics_process(delta: float) -> void:
 # void death
 	if position.y >= 1000:
 		die()
+
+	if locked:
+		velocity.x = 0
+		velocity.y = 0
+
 
 	move_and_slide()
 	print (velocity, PlayerFacing)
@@ -115,8 +122,35 @@ func _on_spike_body_entered(body: Node2D) -> void:
 		die()
 	
 func die():
-	get_tree().quit()
+	locked = true
+	get_tree().paused = true
+	await get_tree().create_timer(1.0).timeout
+	$DeathScreen.visible = true
+	print($DeathScreen.visible)
+	velocity.x = 0
+	velocity.y = 0
 
 func _on_landed() -> void:
 	$CPUParticles2D.emitting = true
 	$CPUParticles2D2.emitting = true
+
+
+func _on_finish_line_body_entered(body: Node2D) -> void:
+	if body.name == "PlayerCharacter":
+		print("YOU WIN!!!!!!!")
+		win()
+		
+func win():
+	locked = true
+	velocity.x = 0
+	$FadeOut/AnimationPlayer.play("FadeOut")
+	await get_tree().create_timer(1.5).timeout
+	$FadeOut/Label.visible = true
+	
+
+
+func _on_button_button_down() -> void:
+	get_tree().paused = false
+	if locked:
+		get_tree().reload_current_scene()
+		print("button pressed", locked)
