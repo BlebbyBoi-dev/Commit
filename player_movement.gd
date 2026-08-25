@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+# HOLY VARIABLES
+
 @export var gravity = 400
 @export var accel = 500
 @export var jump_power = -20000
@@ -20,6 +22,9 @@ func _physics_process(delta: float) -> void:
 	if 1+1 == 2:
 		codeworking = true
 	
+	# =========================================
+	# Player Physics and Movement
+	# =========================================
 	# GRAVITY
 	if !locked:
 		velocity.y += gravity * delta
@@ -27,7 +32,7 @@ func _physics_process(delta: float) -> void:
 	# MOVEMENT
 	if Input.is_action_pressed("Left") and is_on_floor() and !dashing and !locked:
 		PlayerFacing = 1
-		velocity.x += accel * delta * -1
+		velocity.x -= accel * delta
 	if Input.is_action_pressed("Right") and is_on_floor() and !dashing and !locked:
 		PlayerFacing = -1
 		velocity.x += accel * delta
@@ -35,7 +40,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, friction * delta)
 	if Input.is_action_pressed("Left") and !is_on_floor() and !dashing and !locked:
 		PlayerFacing = 1
-		velocity.x += airfriction * delta * -1
+		velocity.x -= airfriction * delta
 	if Input.is_action_pressed("Right") and !is_on_floor() and !dashing and !locked:
 		PlayerFacing = -1
 		velocity.x += airfriction * delta
@@ -132,13 +137,6 @@ func backstep(): #backstep yippee
 	velocity.x = dashpower * PlayerFacing
 	move_and_slide()
 
-
-#if the player touches spike
-func _on_spike_body_entered(body: Node2D) -> void:
-	if body.name == "PlayerCharacter":
-		print("you died lmao", body.name)
-		die()
-
 #the code that kills you (it killed me making it lmao)
 func die():
 	locked = true
@@ -148,6 +146,7 @@ func die():
 	print($DeathScreen.visible)
 	velocity.x = 0
 	velocity.y = 0
+
 
 
 # *if player hit ground then particle physics*
@@ -176,9 +175,53 @@ func _on_button_button_down() -> void:
 	if locked:
 		get_tree().reload_current_scene()
 		print("button pressed", locked)
-
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_2_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_3_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_4_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_5_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_6_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_7_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_8_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
+func _on_spike_9_body_entered(body: Node2D) -> void:
+	$Blood.emitting = true
 	if body.name == "PlayerCharacter":
 		print("you died lmao", body.name)
 		die()
