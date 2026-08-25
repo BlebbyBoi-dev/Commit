@@ -184,6 +184,33 @@ tracks/1/keys = {
 "values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_chykk"]
+resource_name = "Fadein"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_3fc7d"]
 length = 0.001
 tracks/0/type = "value"
@@ -214,10 +241,18 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_chykk"]
 _data = {
 &"FadeOut": SubResource("Animation_2lqyf"),
+&"Fadein": SubResource("Animation_chykk"),
 &"RESET": SubResource("Animation_3fc7d")
 }
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3brtn"]
+[sub_resource type="Curve" id="Curve_2lqyf"]
+_data = [Vector2(0.010638304, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_3fc7d"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lqyf"]
 texture = ExtResource("27_3brtn")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
@@ -236,13 +271,13 @@ texture_region_size = Vector2i(32, 32)
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p1166"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3fc7d"]
 texture = ExtResource("24_0lcl8")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n2naj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chykk"]
 texture = ExtResource("28_exy8o")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -251,11 +286,11 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_p86t8"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_p1166")
-sources/0 = SubResource("TileSetAtlasSource_3brtn")
-sources/2 = SubResource("TileSetAtlasSource_n2naj")
+sources/1 = SubResource("TileSetAtlasSource_3fc7d")
+sources/0 = SubResource("TileSetAtlasSource_2lqyf")
+sources/2 = SubResource("TileSetAtlasSource_chykk")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_exy8o"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kuj8k"]
 texture = ExtResource("27_3brtn")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
@@ -267,15 +302,15 @@ texture_region_size = Vector2i(32, 32)
 1:2/0 = 0
 2:2/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lqyf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vkugn"]
 texture = ExtResource("28_exy8o")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_4uktx"]
 tile_size = Vector2i(32, 32)
-sources/3 = SubResource("TileSetAtlasSource_exy8o")
-sources/4 = SubResource("TileSetAtlasSource_2lqyf")
+sources/3 = SubResource("TileSetAtlasSource_kuj8k")
+sources/4 = SubResource("TileSetAtlasSource_vkugn")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p86t8"]
 size = Vector2(8, 20)
@@ -389,6 +424,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerCharacter/FadeOut" unique_id=959011712]
 libraries/ = SubResource("AnimationLibrary_chykk")
@@ -408,8 +444,26 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "You Win!
-Thank you for playing the current build of Commit! 
-Level 2 is In Development..."
+Warping to level 2..."
+
+[node name="Blood" type="CPUParticles2D" parent="PlayerCharacter" unique_id=1394733238]
+process_mode = 2
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2, 7)
+rotation = -6.2209263
+emitting = false
+amount = 100
+texture = ExtResource("24_nqrg8")
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+direction = Vector2(0, -1)
+spread = 100.0
+initial_velocity_min = 69.31
+initial_velocity_max = 218.05
+scale_amount_max = 1.5
+scale_amount_curve = SubResource("Curve_2lqyf")
+color_ramp = SubResource("Gradient_3fc7d")
 
 [node name="World" type="Node2D" parent="." unique_id=89502598]
 

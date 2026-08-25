@@ -16,6 +16,11 @@ extends CharacterBody2D
 @export var locked = false
 @onready var sprite = $AnimatedSprite2D
 
+
+# load in
+func _ready() -> void:
+	$FadeOut/AnimationPlayer.play("Fadein")
+
 func _physics_process(delta: float) -> void:
 	
 	# very important code
@@ -167,7 +172,8 @@ func win():
 	$FadeOut/AnimationPlayer.play("FadeOut")
 	await get_tree().create_timer(1.5).timeout
 	$FadeOut/Label.visible = true
-	
+	await get_tree().create_timer(5).timeout
+	get_tree().change_scene_to_file("res://Level2.tscn")
 
 # aint no way bro you pressed the respawn button i should respawn you
 func _on_button_button_down() -> void:
