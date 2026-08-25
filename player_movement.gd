@@ -40,6 +40,9 @@ func _physics_process(delta: float) -> void:
 		PlayerFacing = -1
 		velocity.x += airfriction * delta
 
+	if is_on_wall():
+		velocity.x = 0
+
 	if velocity.x <= -1 * max_speed:
 		velocity.x = -1 * max_speed
 	elif velocity.x >= 1 * max_speed:
@@ -69,21 +72,21 @@ func _physics_process(delta: float) -> void:
 	else:
 		was_airborne = true
 # void death
-	if position.y >= 1000:
+	if position.y >= 1500:
 		die()
 
 	if locked:
 		velocity.x = 0
 		velocity.y = 0
 
-
+	var player_velocity = velocity
 	move_and_slide()
+	velocity.x = player_velocity.x
+	
+	if abs(velocity.x) > max_speed:
+		velocity.x = sign(velocity.x) * max_speed
 	print (velocity, PlayerFacing)
 	print(codeworking)
-
-
-
-
 
 	# Anims
 	if PlayerFacing == 1:
@@ -173,3 +176,9 @@ func _on_button_button_down() -> void:
 	if locked:
 		get_tree().reload_current_scene()
 		print("button pressed", locked)
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == "PlayerCharacter":
+		print("you died lmao", body.name)
+		die()
