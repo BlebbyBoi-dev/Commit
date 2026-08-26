@@ -339,7 +339,7 @@ size = Vector2(30, 321)
 [node name="Level2" type="Node2D" unique_id=1136159542]
 
 [node name="PlayerCharacter" type="CharacterBody2D" parent="." unique_id=1635250875]
-position = Vector2(126, 467)
+position = Vector2(-282, 448)
 script = ExtResource("1_kfb7d")
 gravity = 800
 jump_power = -28000
@@ -1374,7 +1374,7 @@ node_a = NodePath("../Log1")
 node_b = NodePath("../Log2")
 
 [node name="Trigger" type="Area2D" parent="World/Bridge" unique_id=458731833]
-position = Vector2(1866, -1242)
+position = Vector2(1990, -1229)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Bridge/Trigger" unique_id=937524747]
 position = Vector2(0, -1328.5)
@@ -4596,7 +4596,7 @@ scale = Vector2(1, 2.3437495)
 texture = ExtResource("34_7astt")
 
 [node name="LevelExit2" type="Sprite2D" parent="World/FinishLine" unique_id=1499032793]
-position = Vector2(-3189, 58)
+position = Vector2(-3191, 57)
 rotation = 3.1415927
 texture = ExtResource("34_7astt")
 
