@@ -234,3 +234,25 @@ func _on_spike_9_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerCharacter":
 		print("you died lmao", body.name)
 		die()
+
+
+func _on_bubble_body_entered(body: Node2D) -> void:
+	if body.name == "PlayerCharacter":
+		gravity = 500
+		max_speed = 700
+		dashpower = 500
+		jump_power = -20000
+		accel = 300
+		friction = 700
+		airfriction = 200
+
+
+func _on_bubble_body_exited(body: Node2D) -> void:
+	if body.name == "PlayerCharacter":
+		gravity = 800
+		max_speed = 1000
+		dashpower = 700
+		jump_power = -28000
+		accel = 500
+		friction = 1000
+		airfriction = 200

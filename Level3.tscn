@@ -292,6 +292,76 @@ shader_parameter/ripple_strength = 1.0
 shader_parameter/ripple_progress = 0.370000017575
 shader_parameter/ripple_position = Vector2(0.5, 0.5)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_4uktx"]
+radius = 204.00246
+
+[sub_resource type="BoxMesh" id="BoxMesh_p86t8"]
+
+[sub_resource type="Animation" id="Animation_larcy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.35856497]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshInstance2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(182, -139)]
+}
+
+[sub_resource type="Animation" id="Animation_ayhma"]
+resource_name = "swing"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.0666667, 2),
+"transitions": PackedFloat32Array(0.7071069, 1.3195082, 0.7071069),
+"update": 0,
+"values": [0.9512044423369096, -0.8639379797371931, 0.9512044423369096]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshInstance2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.0666667, 2),
+"transitions": PackedFloat32Array(0.7578581, 1.5157167, 0.7578581),
+"update": 0,
+"values": [Vector2(143.46, -139), Vector2(278.54, -148.43), Vector2(143.46, -139)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jnvkq"]
+_data = {
+&"RESET": SubResource("Animation_larcy"),
+&"swing": SubResource("Animation_ayhma")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p86t8"]
+size = Vector2(393, 0)
+
 [node name="Node2D" type="Node2D" unique_id=1473583681]
 
 [node name="PlayerCharacter" type="CharacterBody2D" parent="." unique_id=1230495125]
@@ -456,4 +526,37 @@ position = Vector2(226, -42)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("30_ayhma")
 
+[node name="bubble" type="Area2D" parent="World/bubble" unique_id=772145750]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/bubble/bubble" unique_id=1128270036]
+position = Vector2(226, -42)
+shape = SubResource("CircleShape2D_4uktx")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="World/bubble" unique_id=907423128]
+position = Vector2(182, -139)
+rotation = 0.35856497
+scale = Vector2(52.250076, 243.84587)
+mesh = SubResource("BoxMesh_p86t8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="World/bubble" unique_id=708362365]
+libraries/ = SubResource("AnimationLibrary_jnvkq")
+autoplay = &"swing"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="World/bubble" unique_id=1633775738]
+position = Vector2(40, 27)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/bubble/StaticBody2D" unique_id=256528985]
+position = Vector2(186.5, -10)
+shape = SubResource("RectangleShape2D_p86t8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="World/bubble" unique_id=1794253624]
+position = Vector2(-261, 249)
+rotation = -0.63589185
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/bubble/StaticBody2D2" unique_id=2093127676]
+position = Vector2(186.5, -10)
+shape = SubResource("RectangleShape2D_p86t8")
+
 [connection signal="button_down" from="PlayerCharacter/DeathScreen/Button" to="PlayerCharacter" method="_on_button_button_down"]
+[connection signal="body_entered" from="World/bubble/bubble" to="PlayerCharacter" method="_on_bubble_body_entered"]
+[connection signal="body_exited" from="World/bubble/bubble" to="PlayerCharacter" method="_on_bubble_body_exited"]
