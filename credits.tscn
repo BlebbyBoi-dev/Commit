@@ -14,8 +14,10 @@ color = Color(0, 0, 0, 1)
 [node name="Control" type="Control" parent="." unique_id=1378546764]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -388.0
+offset_top = -508.0
+offset_right = -348.0
+offset_bottom = -468.0
 script = ExtResource("1_nm7lk")
 
 [node name="Label" type="Label" parent="Control" unique_id=774794406]
@@ -75,6 +77,6 @@ BlebbyBoi
 BlebbyBoi"
 
 [node name="Screenshot20260829202025" type="Sprite2D" parent="." unique_id=87828374]
-position = Vector2(970, 545)
-scale = Vector2(1.9310315, 1.9310315)
+position = Vector2(582, 316)
+scale = Vector2(1.125893, 1.125893)
 texture = ExtResource("2_c1t8d")

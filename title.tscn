@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dex1wo5goeq7n" path="res://title.gd" id="1_y7k74"]
 [ext_resource type="VideoStream" uid="uid://dbqxhe65nt7ji" path="res://assets/Other/commit-title.ogv" id="2_oyqm6"]
+[ext_resource type="AudioStream" uid="uid://cg5g4dxxe0qbo" path="res://assets/Music/A big Commitment (Aug 253A24 PM) (1).mp3" id="3_kpexm"]
 
 [node name="Node2D" type="Node2D" unique_id=2020664359]
 script = ExtResource("1_y7k74")
@@ -11,3 +12,11 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 stream = ExtResource("2_oyqm6")
 autoplay = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=180183000]
+stream = ExtResource("3_kpexm")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=482902964]
+position = Vector2(959, 536)
+zoom = Vector2(0.6, 0.6)

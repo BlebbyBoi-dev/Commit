@@ -339,11 +339,9 @@ size = Vector2(30, 321)
 [node name="Level2" type="Node2D" unique_id=1136159542]
 
 [node name="PlayerCharacter" type="CharacterBody2D" parent="." unique_id=1635250875]
-position = Vector2(-282, 448)
+position = Vector2(-294, 452)
 script = ExtResource("1_kfb7d")
-gravity = 800
-jump_power = -28000
-friction = 1000
+friction = 600
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter" unique_id=1400913961]
 position = Vector2(-3, 1)

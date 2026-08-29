@@ -14,6 +14,9 @@ extends CharacterBody2D
 @export var airfriction = 100
 @export var was_airborne = false
 @export var locked = false
+@export var camshake = false
+var rng = RandomNumberGenerator.new()
+var my_random_number = rng.randf_range(-10000.0, 10000.0)
 @onready var sprite = $AnimatedSprite2D
 
 
@@ -100,7 +103,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = sign(velocity.x) * max_speed
 	print (velocity, PlayerFacing)
 	print(codeworking)
-
+	print($Camera2D.offset)
+	print("camshake: ", camshake)
 	# Anims
 	if PlayerFacing == 1:
 		$AnimatedSprite2D.flip_h = true
@@ -131,8 +135,14 @@ func _physics_process(delta: float) -> void:
 		
 
 
-
-
+# camshake
+	if camshake == true:
+		$Camera2D.offset.x = rng.randf()
+		$Camera2D.offset.y = rng.randf()
+		await get_tree().create_timer(0.5).timeout
+		camshake = false
+		$Camera2D.offset.y = 0
+		$Camera2D.offset.x = 0
 
 
 
@@ -143,7 +153,9 @@ func backstep(): #backstep yippee
 	if dashing:
 		$CPUParticles2D3.emitting = true
 	velocity.x = dashpower * PlayerFacing
+	camshake = true
 	move_and_slide()
+	
 
 #the code that kills you (it killed me making it lmao)
 func die():
@@ -174,11 +186,9 @@ func win():
 	velocity.x = 0
 	$FadeOut/AnimationPlayer.play("FadeOut")
 	await get_tree().create_timer(1.5).timeout
-	$FadeOut/Label.visible = true
-	await get_tree().create_timer(5).timeout
-	if get_tree().current_scene.scene_file_path == "res://level_1.tscn":
+	if get_tree().current_scene.scene_file_path == "res://level1.tscn":
 		get_tree().change_scene_to_file("res://Level2.tscn")
-	elif get_tree().current_scene.scene_file_path == "res://Level_2.tscn":
+	elif get_tree().current_scene.scene_file_path == "res://Level2.tscn":
 		get_tree().change_scene_to_file("res://credits.tscn")
 
 # aint no way bro you pressed the respawn button i should respawn you
