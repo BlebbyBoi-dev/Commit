@@ -176,7 +176,10 @@ func win():
 	await get_tree().create_timer(1.5).timeout
 	$FadeOut/Label.visible = true
 	await get_tree().create_timer(5).timeout
-	get_tree().change_scene_to_file("res://Level2.tscn")
+	if get_tree().current_scene.scene_file_path == "res://level_1.tscn":
+		get_tree().change_scene_to_file("res://Level2.tscn")
+	elif get_tree().current_scene.scene_file_path == "res://Level_2.tscn":
+		get_tree().change_scene_to_file("res://credits.tscn")
 
 # aint no way bro you pressed the respawn button i should respawn you
 func _on_button_button_down() -> void:

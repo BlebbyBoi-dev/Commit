@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dt0reofh136xj"]
+
+[ext_resource type="Script" uid="uid://dex1wo5goeq7n" path="res://title.gd" id="1_y7k74"]
+[ext_resource type="VideoStream" uid="uid://dbqxhe65nt7ji" path="res://assets/Other/commit-title.ogv" id="2_oyqm6"]
+
+[node name="Node2D" type="Node2D" unique_id=2020664359]
+script = ExtResource("1_y7k74")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1494595150]
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_oyqm6")
+autoplay = true
