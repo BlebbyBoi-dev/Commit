@@ -27,11 +27,11 @@
 [ext_resource type="Texture2D" uid="uid://qr01va6ppkym" path="res://assets/Other/DirtPart.png" id="24_nqrg8"]
 [ext_resource type="Texture2D" uid="uid://btjikhxp60v6e" path="res://assets/Other/BackstepPart.png" id="25_3brtn"]
 [ext_resource type="Texture2D" uid="uid://cg6d8l4hbcor1" path="res://assets/Other/Spike.png" id="25_p1166"]
+[ext_resource type="AudioStream" uid="uid://c66srhv8y5ecs" path="res://assets/Music/Copy of Untitled song (Aug 253A24 PM).mp3" id="26_6wmxb"]
 [ext_resource type="Texture2D" uid="uid://xale67rg16bs" path="res://assets/Tiles/MountainTiles.png" id="27_3brtn"]
 [ext_resource type="Texture2D" uid="uid://ci4hbu10vyv11" path="res://assets/Tiles/MountainGround.png" id="28_exy8o"]
 [ext_resource type="Texture2D" uid="uid://fbh60b6pumk8" path="res://assets/Other/LevelExit.png" id="30_n2naj"]
 [ext_resource type="Texture2D" uid="uid://byfbb288sg5mq" path="res://assets/Other/Sky.png" id="31_2lqyf"]
-[ext_resource type="AudioStream" uid="uid://b815uoqp7o6g1" path="res://assets/Music/commitment (Aug 253A24 PM).mp3" id="32_6wmxb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lcl8"]
 size = Vector2(24, 80)
@@ -468,7 +468,7 @@ color_ramp = SubResource("Gradient_3fc7d")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="PlayerCharacter" unique_id=900031806]
 position = Vector2(-204, -404)
-stream = ExtResource("32_6wmxb")
+stream = ExtResource("26_6wmxb")
 autoplay = true
 max_distance = 4096.0
 

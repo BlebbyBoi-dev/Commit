@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://d1vxuuee4yh7b" path="res://assets/PlayerAnims/Walk/Walk.005.png" id="23_q3blq"]
 [ext_resource type="Texture2D" uid="uid://qr01va6ppkym" path="res://assets/Other/DirtPart.png" id="24_16k7p"]
 [ext_resource type="Texture2D" uid="uid://btjikhxp60v6e" path="res://assets/Other/BackstepPart.png" id="25_kkqk6"]
-[ext_resource type="AudioStream" uid="uid://b815uoqp7o6g1" path="res://assets/Music/commitment (Aug 253A24 PM).mp3" id="26_c8kak"]
+[ext_resource type="AudioStream" uid="uid://c5mvw3rars7aa" path="res://assets/Music/Copy of idk what to call this (Aug 303A20 PM).mp3" id="26_c8kak"]
 [ext_resource type="Script" uid="uid://b63ewc10sg625" path="res://bridge.gd" id="29_jixdh"]
 [ext_resource type="Texture2D" uid="uid://d4hn700i5qx5b" path="res://assets/Other/Log.png" id="30_sbj4n"]
 [ext_resource type="Script" uid="uid://bwm4ie8vr0pmh" path="res://boulder.gd" id="31_8wyk7"]

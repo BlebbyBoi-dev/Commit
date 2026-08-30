@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="brackeys jam 26.2"
+config/tags=PackedStringArray("gamejam")
 run/main_scene="uid://dt0reofh136xj"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://xaj15v0iby7b" path="res://creditsscroll.gd" id="1_nm7lk"]
 [ext_resource type="Texture2D" uid="uid://duphcyoawautt" path="res://Screenshot 2026-08-29 202025.png" id="2_c1t8d"]
-[ext_resource type="AudioStream" uid="uid://b815uoqp7o6g1" path="res://assets/Music/commitment (Aug 253A24 PM).mp3" id="3_g4wvt"]
+[ext_resource type="AudioStream" uid="uid://cmlnq1rkhrrjj" path="res://assets/Music/null.mp3" id="3_g4wvt"]
 
 [node name="Credits" type="Node2D" unique_id=1050159437]
 
