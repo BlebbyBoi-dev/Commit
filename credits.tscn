@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://xaj15v0iby7b" path="res://creditsscroll.gd" id="1_nm7lk"]
 [ext_resource type="Texture2D" uid="uid://duphcyoawautt" path="res://Screenshot 2026-08-29 202025.png" id="2_c1t8d"]
+[ext_resource type="AudioStream" uid="uid://b815uoqp7o6g1" path="res://assets/Music/commitment (Aug 253A24 PM).mp3" id="3_g4wvt"]
 
 [node name="Credits" type="Node2D" unique_id=1050159437]
 
@@ -78,5 +79,9 @@ BlebbyBoi"
 
 [node name="Screenshot20260829202025" type="Sprite2D" parent="." unique_id=87828374]
 position = Vector2(582, 316)
-scale = Vector2(1.125893, 1.125893)
+scale = Vector2(1.2531645, 1.1660378)
 texture = ExtResource("2_c1t8d")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=700981962]
+stream = ExtResource("3_g4wvt")
+autoplay = true

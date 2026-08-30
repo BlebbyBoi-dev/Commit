@@ -77,9 +77,6 @@ func _physics_process(delta: float) -> void:
 		dashing = false
 		$CPUParticles2D3.emitting = false
 
-	if Input.is_action_just_pressed("Interact"):
-		position.x = 500
-		position.y = -10000
 # particle stuff
 	if is_on_floor():
 		if was_airborne:

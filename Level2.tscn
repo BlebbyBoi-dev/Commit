@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://d1vxuuee4yh7b" path="res://assets/PlayerAnims/Walk/Walk.005.png" id="23_q3blq"]
 [ext_resource type="Texture2D" uid="uid://qr01va6ppkym" path="res://assets/Other/DirtPart.png" id="24_16k7p"]
 [ext_resource type="Texture2D" uid="uid://btjikhxp60v6e" path="res://assets/Other/BackstepPart.png" id="25_kkqk6"]
+[ext_resource type="AudioStream" uid="uid://b815uoqp7o6g1" path="res://assets/Music/commitment (Aug 253A24 PM).mp3" id="26_c8kak"]
 [ext_resource type="Script" uid="uid://b63ewc10sg625" path="res://bridge.gd" id="29_jixdh"]
 [ext_resource type="Texture2D" uid="uid://d4hn700i5qx5b" path="res://assets/Other/Log.png" id="30_sbj4n"]
 [ext_resource type="Script" uid="uid://bwm4ie8vr0pmh" path="res://boulder.gd" id="31_8wyk7"]
@@ -306,7 +307,7 @@ radius = 75.026665
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p86t8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fhx3b"]
-size = Vector2(387, 20)
+size = Vector2(709, 2813)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1nk2"]
 texture = ExtResource("1_s8dg4")
@@ -480,6 +481,10 @@ theme_override_font_sizes/font_size = 32
 text = "You Win!
 Thank you for playing the current build of Commit! 
 Level 3 is In Development..."
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="PlayerCharacter" unique_id=1280662852]
+stream = ExtResource("26_c8kak")
+autoplay = true
 
 [node name="World" type="Node2D" parent="." unique_id=2116410605]
 
@@ -1408,7 +1413,7 @@ shape = SubResource("RectangleShape2D_p86t8")
 position = Vector2(2790, -1123)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/BoulderStuff/Trigger" unique_id=1602768796]
-position = Vector2(183.5, 0)
+position = Vector2(344.5, 738.5)
 shape = SubResource("RectangleShape2D_fhx3b")
 
 [node name="Parallax2D" type="Parallax2D" parent="World" unique_id=1170882355]

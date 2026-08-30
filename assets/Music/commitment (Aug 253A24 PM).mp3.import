@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b815uoqp7o6g1"
+path="res://.godot/imported/commitment (Aug 253A24 PM).mp3-9e7349f2a9474ab5cf93c4dd4ba5ae84.mp3str"
+
+[deps]
+
+source_file="res://assets/Music/commitment (Aug 253A24 PM).mp3"
+dest_files=["res://.godot/imported/commitment (Aug 253A24 PM).mp3-9e7349f2a9474ab5cf93c4dd4ba5ae84.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://ci4hbu10vyv11" path="res://assets/Tiles/MountainGround.png" id="28_exy8o"]
 [ext_resource type="Texture2D" uid="uid://fbh60b6pumk8" path="res://assets/Other/LevelExit.png" id="30_n2naj"]
 [ext_resource type="Texture2D" uid="uid://byfbb288sg5mq" path="res://assets/Other/Sky.png" id="31_2lqyf"]
+[ext_resource type="AudioStream" uid="uid://b815uoqp7o6g1" path="res://assets/Music/commitment (Aug 253A24 PM).mp3" id="32_6wmxb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lcl8"]
 size = Vector2(24, 80)
@@ -464,6 +465,12 @@ initial_velocity_max = 218.05
 scale_amount_max = 1.5
 scale_amount_curve = SubResource("Curve_2lqyf")
 color_ramp = SubResource("Gradient_3fc7d")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="PlayerCharacter" unique_id=900031806]
+position = Vector2(-204, -404)
+stream = ExtResource("32_6wmxb")
+autoplay = true
+max_distance = 4096.0
 
 [node name="World" type="Node2D" parent="." unique_id=89502598]
 
